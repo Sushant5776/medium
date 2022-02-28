@@ -5,6 +5,7 @@ import { ClientConfig } from 'next-sanity'
 const config: ClientConfig = {
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
+  // apiVersion: '2021-08-31',
   useCdn: process.env.NODE_ENV == 'production',
   token: process.env.SANITY_API_TOKEN,
 }
